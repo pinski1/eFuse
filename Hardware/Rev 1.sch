@@ -8243,6 +8243,7 @@ http://dangerousprototypes.com</description>
 <text x="60.96" y="77.47" size="1.778" layer="97">5S</text>
 <text x="71.12" y="77.47" size="1.778" layer="97">6S</text>
 <wire x1="38.1" y1="67.31" x2="38.1" y2="80.01" width="0.1524" layer="97"/>
+<text x="88.9" y="134.62" size="1.778" layer="97">R1 = 55mV / Ilimit</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8362,12 +8363,17 @@ http://dangerousprototypes.com</description>
 <wire x1="92.71" y1="124.46" x2="91.44" y2="124.46" width="0.6096" layer="91"/>
 <pinref part="R1" gate="G$1" pin="B1"/>
 <pinref part="R1" gate="G$1" pin="B2"/>
-<wire x1="91.44" y1="124.46" x2="58.42" y2="124.46" width="0.6096" layer="91"/>
+<wire x1="91.44" y1="124.46" x2="86.36" y2="124.46" width="0.6096" layer="91"/>
+<wire x1="86.36" y1="124.46" x2="58.42" y2="124.46" width="0.6096" layer="91"/>
 <wire x1="92.71" y1="127" x2="91.44" y2="127" width="0.6096" layer="91"/>
 <wire x1="91.44" y1="127" x2="91.44" y2="124.46" width="0.6096" layer="91"/>
 <junction x="91.44" y="124.46"/>
 <pinref part="PAD1" gate="1" pin="P"/>
 <label x="68.58" y="127" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
+<junction x="86.36" y="124.46"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -8511,10 +8517,8 @@ http://dangerousprototypes.com</description>
 <segment>
 <wire x1="91.44" y1="121.92" x2="92.71" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="A" pin="VIN"/>
 <wire x1="109.22" y1="101.6" x2="91.44" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="101.6" x2="91.44" y2="99.06" width="0.1524" layer="91"/>
 <junction x="91.44" y="101.6"/>
 <wire x1="91.44" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="101.6" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
